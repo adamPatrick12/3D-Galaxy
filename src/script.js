@@ -19,12 +19,12 @@ const scene = new THREE.Scene();
  */
 
 const parameters = {};
-parameters.count = 10000;
+parameters.count = 400000;
 parameters.size = 0.01;
 parameters.radius = 5;
-parameters.branches = 3;
-parameters.spin = 1;
-parameters.randomness = 2;
+parameters.branches = 4;
+parameters.spin = 1.5;
+parameters.randomness = 1;
 parameters.randomnessPower = 3;
 parameters.insideColor = "#ff6030";
 parameters.outsideColor = "#1b3984";
@@ -183,8 +183,8 @@ const camera = new THREE.PerspectiveCamera(
   100
 );
 camera.position.x = 3;
-camera.position.y = 3;
-camera.position.z = 3;
+camera.position.y = 7;
+camera.position.z = 5;
 scene.add(camera);
 
 // Controls
